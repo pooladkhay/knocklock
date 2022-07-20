@@ -92,6 +92,8 @@ func listener(port string, comm chan knocked) {
 			ip:   strings.Split(c.RemoteAddr().String(), ":")[0],
 			port: port,
 		}
+
+		// sending knocking data a channel in order to transfer them to the main routine
 		comm <- data
 
 		// closing the connection immediately after processing the data
