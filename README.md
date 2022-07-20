@@ -9,7 +9,8 @@ cd knocklock
 go run .
 ```
 Program wil start listening on four ports which are hard-coded.
-Expected knocking sequence is: `2002, 6006, 3003, 1001`
+Expected knocking sequence is: 
+`2002, 6006, 3003, 1001`
 
 Open a new terminal window and try connecting using ssh:
 ```bash
